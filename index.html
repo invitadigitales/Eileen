@@ -703,21 +703,27 @@ audio.volume = 0.5;
 
 
 
-var targetDate = new Date("Jun 12, 2025 08:00:00").getTime();
+
+
+
+
+
+
+var targetDate = new Date("Jan 10, 2026 08:00:00").getTime();
 var countdownTimer = countdown(
     targetDate,
     function(ts) {
         var countdownText = `
             <div class="time-container">
-                <span>${ts.days}</span>
+                <span>${ts.days} :</span>
                 <p>Días</p>
             </div>
             <div class="time-container">
-                <span>${ts.hours}</span>
+                <span>${ts.hours} :</span>
                 <p>Horas</p>
             </div>
             <div class="time-container">
-                <span>${ts.minutes}</span>
+                <span>${ts.minutes} :</span>
                 <p>Minutos</p>
             </div>
             <div class="time-container">
@@ -733,16 +739,8 @@ var countdownTimer = countdown(
 
 
 
+
 new WOW().init();
-
-
-
-
-
-
-
-
-
 
 
 
